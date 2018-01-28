@@ -1,0 +1,52 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BF_ACTIVE_ERROR	include/bf.h	/^  BF_ACTIVE_ERROR,               \/* Το επίπεδο BF είναι ενεργό και δεν μπορεί να αρχικοποιηθεί *\/$/;"	e	enum:BF_ErrorCode
+BF_BLOCK_SIZE	include/bf.h	8;"	d
+BF_BUFFER_SIZE	include/bf.h	9;"	d
+BF_Block	include/bf.h	/^typedef struct BF_Block BF_Block;$/;"	t	typeref:struct:BF_Block
+BF_ERROR	include/bf.h	/^  BF_ERROR$/;"	e	enum:BF_ErrorCode
+BF_ErrorCode	include/bf.h	/^typedef enum BF_ErrorCode {$/;"	g
+BF_ErrorCode	include/bf.h	/^} BF_ErrorCode;$/;"	t	typeref:enum:BF_ErrorCode
+BF_FILE_ALREADY_EXISTS	include/bf.h	/^  BF_FILE_ALREADY_EXISTS,        \/* Το αρχείο δεν μπορεί να δημιουργιθεί γιατι υπάρχει ήδη *\/$/;"	e	enum:BF_ErrorCode
+BF_FULL_MEMORY_ERROR	include/bf.h	/^  BF_FULL_MEMORY_ERROR,          \/* Η μνήμη έχει γεμίσει με ενεργά block *\/$/;"	e	enum:BF_ErrorCode
+BF_H	include/bf.h	2;"	d
+BF_INVALID_BLOCK_NUMBER_ERROR	include/bf.h	/^  BF_INVALID_BLOCK_NUMBER_ERROR, \/* Το block που ζητήθηκε δεν υπάρχει στο αρχείο *\/$/;"	e	enum:BF_ErrorCode
+BF_INVALID_FILE_ERROR	include/bf.h	/^  BF_INVALID_FILE_ERROR,         \/* Ο αναγνωριστικός αριθμός αρχείου δεν αντιστιχεί σε κάποιο ανοιχτό αρχείο *\/$/;"	e	enum:BF_ErrorCode
+BF_MAX_OPEN_FILES	include/bf.h	10;"	d
+BF_OK	include/bf.h	/^  BF_OK,$/;"	e	enum:BF_ErrorCode
+BF_OPEN_FILES_LIMIT_ERROR	include/bf.h	/^  BF_OPEN_FILES_LIMIT_ERROR,     \/* Υπάρχουν ήδη BF_MAX_OPEN_FILES αρχεία ανοικτά *\/$/;"	e	enum:BF_ErrorCode
+CALL_OR_DIE	examples/bf_main.c	7;"	d	file:
+CALL_OR_DIE	examples/hp_main.c	48;"	d	file:
+HEAP_FILE_H	include/heap_file.h	2;"	d
+HP_CloseFile	src/heap_file.c	/^HP_ErrorCode HP_CloseFile(int fileDesc) {$/;"	f
+HP_CreateIndex	src/heap_file.c	/^HP_ErrorCode HP_CreateIndex(const char *filename) {$/;"	f
+HP_ERROR	include/heap_file.h	/^  HP_ERROR$/;"	e	enum:HP_ErrorCode
+HP_ErrorCode	include/heap_file.h	/^typedef enum HP_ErrorCode {$/;"	g
+HP_ErrorCode	include/heap_file.h	/^} HP_ErrorCode;$/;"	t	typeref:enum:HP_ErrorCode
+HP_GetEntry	src/heap_file.c	/^HP_ErrorCode HP_GetEntry(int fileDesc, int rowId, Record *record) {$/;"	f
+HP_Init	src/heap_file.c	/^HP_ErrorCode HP_Init() {$/;"	f
+HP_InsertEntry	src/heap_file.c	/^HP_ErrorCode HP_InsertEntry(int fileDesc, Record record) {$/;"	f
+HP_OK	include/heap_file.h	/^  HP_OK,$/;"	e	enum:HP_ErrorCode
+HP_OpenFile	src/heap_file.c	/^HP_ErrorCode HP_OpenFile(const char *fileName, int *fileDesc){$/;"	f
+HP_PrintAllEntries	src/heap_file.c	/^HP_ErrorCode HP_PrintAllEntries(int fileDesc) {$/;"	f
+LRU	include/bf.h	/^  LRU,$/;"	e	enum:ReplacementAlgorithm
+MRU	include/bf.h	/^  MRU$/;"	e	enum:ReplacementAlgorithm
+RUN_AND_TIME	examples/hp_main.c	57;"	d	file:
+Record	include/heap_file.h	/^typedef struct Record {$/;"	s
+Record	include/heap_file.h	/^} Record;$/;"	t	typeref:struct:Record
+ReplacementAlgorithm	include/bf.h	/^typedef enum ReplacementAlgorithm {$/;"	g
+ReplacementAlgorithm	include/bf.h	/^} ReplacementAlgorithm;$/;"	t	typeref:enum:ReplacementAlgorithm
+TestFileScan	examples/hp_main.c	/^void TestFileScan(int fileDesc, int records_num) {$/;"	f
+cities	examples/hp_main.c	/^const char* cities[] = {$/;"	v
+city	include/heap_file.h	/^	char city[20];$/;"	m	struct:Record
+id	include/heap_file.h	/^	int id;$/;"	m	struct:Record
+main	examples/bf_main.c	/^int main() {$/;"	f
+main	examples/hp_main.c	/^int main() {$/;"	f
+name	include/heap_file.h	/^	char name[15];$/;"	m	struct:Record
+names	examples/hp_main.c	/^const char* names[] = {$/;"	v
+surname	include/heap_file.h	/^	char surname[20];$/;"	m	struct:Record
+surnames	examples/hp_main.c	/^const char* surnames[] = {$/;"	v
